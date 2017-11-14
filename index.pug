@@ -1,0 +1,50 @@
+.container-fluid
+  #simon
+    .row
+      .col-xs-6
+        button#color-btn-0.color-btn
+      .col-xs-6
+        button#color-btn-1.color-btn
+    .row
+      .col-xs-6
+        button#color-btn-2.color-btn
+      .col-xs-6
+        button#color-btn-3.color-btn
+    #button-circle
+      #inner-button-circle
+        .row
+          .col-xs-12
+            #title.text-center
+              | Simon
+        .row.middle-row
+          .col-xs-5
+            #count-box.text-center
+              | --
+          .col-xs-2
+            button#start-btn.simon-btn
+          .col-xs-5
+            .row.text-center
+              #strict-light
+            .row.text-center
+              button#strict-btn.simon-btn
+        .row.middle-row
+          .col-xs-4
+            #count-label
+              | Count
+          .col-xs-4
+            #start-label
+              | Start
+          .col-xs-4
+            #strict-label
+              | Strict
+        .row
+          .col-xs-4
+            #off.text-right
+              | Off
+          .col-xs-4
+            label.switch
+              input(type="checkbox")#power-switch
+              span.slider
+          .col-xs-4
+            #on.text-left
+              | On

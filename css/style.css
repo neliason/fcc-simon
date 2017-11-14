@@ -1,0 +1,182 @@
+body {
+  background-color: white;
+}
+
+#simon {
+  background-color: gray;
+  width: 450px;
+  height: 450px;
+  margin: 7% auto;
+  border-radius: 50%;
+  position: relative;
+}
+
+.color-btn {
+  width: 225px;
+  height: 225px;
+  position: relative;
+  border: gray solid 10px;
+}
+
+#color-btn-0 {
+  background-color: darkgreen;
+  border-top-left-radius: 100%;
+}
+
+#color-btn-1 {
+  background-color: darkred;
+  border-top-right-radius: 100%;
+  margin-left: -15px;
+}
+
+#color-btn-2 {
+  background-color: gold;
+  border-bottom-left-radius: 100%;
+}
+
+#color-btn-3 {
+  background-color: darkblue;
+  border-bottom-right-radius: 100%;
+  margin-left: -15px;
+}
+
+#button-circle {
+  background-color: lightgray;
+  height: 54%;
+  width: 54%;
+  border-radius: 50%;
+  position: absolute;
+  top: 23%;
+  left: 23%;
+  border: gray solid 10px;
+  pointer-events: none;
+}
+
+#inner-button-circle {
+  pointer-events: auto;
+  height: 80%;
+  width: 92%;
+  left: 5%;
+  position: absolute;
+  top: 13%;
+}
+
+#title {
+  font-size: 50px;
+  font-family: "Alfa Slab One", cursive;
+}
+
+.middle-row {
+  margin: 0px 10px 10px 10px;
+}
+
+#count-label {
+  margin-left: 10px;
+}
+
+#start-label {
+  margin-left: 12px;
+}
+
+#count-box {
+  width: 60px;
+  height: 40px;
+  background-color: #4d0000;
+  border-radius: 10px;
+  position: absolute;
+  border: gray solid 4px;
+  font-size: 22px;
+  color: darkred;
+}
+
+#start-btn {
+  background: darkred;
+  position: absolute;
+  z-index: 1;
+}
+
+#start-btn:active {
+  background: red;
+}
+
+#strict-btn {
+  background: gold;
+  margin-left: 15px;
+}
+
+#strict-btn:active {
+  background: yellow;
+}
+
+#strict-light {
+  background: darkred;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  border: gray solid 1.5px;
+  margin-left: 42px;
+  margin-bottom: -7px;
+  margin-top: -3px;
+}
+
+.simon-btn {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: gray solid 3px;
+  margin-top: 10px;
+}
+
+#off {
+  margin-right: -20px;
+}
+
+#on {
+  margin-left: -20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.switch {
+  left: 0%;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 22px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 19px;
+  left: 4px;
+  bottom: 4px;
+  background-color: lightblue;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
