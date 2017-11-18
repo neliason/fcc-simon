@@ -1,93 +1,85 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>FreeCodeCamp - Simon</title>
-  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
-<body>
-  
-<div class="container-fluid">
-  <div id="simon">
-    <div class="row">
-      <div class="col-xs-6">
-        <button class="color-btn" id="color-btn-0"></button>
-      </div>
-      <div class="col-xs-6">
-        <button class="color-btn" id="color-btn-1"></button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6">
-        <button class="color-btn" id="color-btn-2"></button>
-      </div>
-      <div class="col-xs-6">
-        <button class="color-btn" id="color-btn-3"></button>
-      </div>
-    </div>
-    <div id="button-circle">
-      <div id="inner-button-circle">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>FreeCodeCamp - Simon</title>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid img-responsive">
+      <div id="simon">
         <div class="row">
-          <div class="col-xs-12">
-            <div class="text-center" id="title">Simon</div>
+          <div class="col-xs-6">
+            <button class="color-btn" id="color-btn-0"></button>
           </div>
-        </div>
-        <div class="row middle-row">
-          <div class="col-xs-5">
-            <div class="text-center" id="count-box">--</div>
-          </div>
-          <div class="col-xs-2">
-            <button class="simon-btn" id="start-btn"></button>
-          </div>
-          <div class="col-xs-5">
-            <div class="row text-center">
-              <div id="strict-light"></div>
-            </div>
-            <div class="row text-center">
-              <button class="simon-btn" id="strict-btn"></button>
-            </div>
-          </div>
-        </div>
-        <div class="row middle-row">
-          <div class="col-xs-4">
-            <div id="count-label">Count</div>
-          </div>
-          <div class="col-xs-4">
-            <div id="start-label">Start</div>
-          </div>
-          <div class="col-xs-4">
-            <div id="strict-label">Strict</div>
+          <div class="col-xs-6">
+            <button class="color-btn" id="color-btn-1"></button>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-4">
-            <div class="text-right" id="off">Off</div>
+          <div class="col-xs-6">
+            <button class="color-btn" id="color-btn-2"></button>
           </div>
-          <div class="col-xs-4">
-            <label class="switch">
-              <input type="checkbox" id="power-switch"/><span class="slider"></span>
-            </label>
+          <div class="col-xs-6">
+            <button class="color-btn" id="color-btn-3"></button>
           </div>
-          <div class="col-xs-4">
-            <div class="text-left" id="on">On</div>
+        </div>
+        <div id="button-circle">
+          <div id="inner-button-circle">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="text-center" id="title">Simon</div>
+              </div>
+            </div>
+            <div class="row middle-row">
+              <div class="col-xs-5">
+                <div class="text-center" id="count-box">--</div>
+              </div>
+              <div class="col-xs-2">
+                <button class="simon-btn" id="start-btn"></button>
+              </div>
+              <div class="col-xs-5">
+                <div class="row text-center">
+                  <div id="strict-light"></div>
+                </div>
+                <div class="row text-center">
+                  <button class="simon-btn" id="strict-btn"></button>
+                </div>
+              </div>
+            </div>
+            <div class="row middle-row">
+              <div class="col-xs-4">
+                <div id="count-label">Count</div>
+              </div>
+              <div class="col-xs-4">
+                <div id="start-label">Start</div>
+              </div>
+              <div class="col-xs-4">
+                <div id="strict-label">Strict</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="text-right" id="off">Off</div>
+              </div>
+              <div class="col-xs-4">
+                <label class="switch">
+                  <input type="checkbox" id="power-switch"><span class="slider"></span>
+                </label>
+              </div>
+              <div class="col-xs-4">
+                <div class="text-left" id="on">On</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-
-    <script  src="js/index.js"></script>
-
-</body>
+  </body>
 </html>
